@@ -10,23 +10,33 @@ label{
   padding-top:75px;
   padding-bottom:75px;
 }
-.btn1{
-  position: relative;
- left: 50%;
- margin-left: -100px;
-margin-top:50px;
-width:200px;
-height:50px;
+.hed{
+  text-align: center;
+  margin-top: 50px;
 }
 .btn2{
  border-radius:50%;
+ background:    #cccccc;
+ box-shadow:    0 2px #444444;
+ color:         black;
+ display:       inline-flex;
+ justify-content: space-around;
+ font:          inherit;
+ text-align:    center;
  position: relative;
  left: 38%;
  padding:30px;
  margin-top:80px;
+ margin-right:25px;
  
 }
 .btn3{
+  background:    #cccccc;
+  box-shadow:    0 2px #444444;
+  color:         black;
+  display:       inline-block;
+  font:          inherit;
+  text-align:    center;
  border-radius:50%;
  position: relative;
  left: 38%;
@@ -35,19 +45,36 @@ height:50px;
  
 }
 .btn4{
+  background:    #cccccc;
+  box-shadow:    0 2px #444444;
+  color:         black;
+  display:       inline-block;
+  font:          inherit;
+  text-align:    center;
  border-radius:50%;
  position: relative;
  left: 38%;
  padding:30px;
  margin-top:80px;
  
-}.btn5{
- position: relative;
- left:50%;
- margin-left:-140px;
-margin-top:50px;
-width:300px;
-height:50px;
+}
+.btn5{
+  
+  background:    #cccccc;
+  box-shadow:    0 2px #444444;
+  color:         black;
+  display:       inline-block;
+  font:          inherit;
+  text-align:    center;
+  position: relative;
+  left: 42%;
+  padding:10px;
+  margin-top:80px;
+  width:250px;
+  margin-right:40px;
+
+
+
 }
 .RbtnMargin{
  margin-right:400px;
@@ -152,7 +179,7 @@ height:50px;
   }
   .box1{
     width:30%;
-    min-height:50px;
+    min-height:auto;
     height:auto;
     box-shadow:2px 3px 1px gray;
     border-radius:20px;

@@ -13,13 +13,14 @@ function App() {
     <Router>
       <Switch>
         
+        <Route exact path="/mainmenu"> 
+        <Mainmenu/>
+        </Route>
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
-        <Route exact path="/profile" component={Profile} />
-        <Route exact path="/mainmenu" component={Mainmenu} />
-        <Route exact path="/coursemenu" component={Coursemenu} />
-        <Route exact path="/codetranslator" component={Codetranslator} />
-        
+        <Route exact path="/mainmenu/codetranslator" component={Codetranslator} />
+        <Route exact path="/mainmenu/codetranslator/coursemenu" component={Coursemenu} /> 
+        <Route path="/"><Mainmenu/></Route> 
     </Switch>
     </Router>
   );

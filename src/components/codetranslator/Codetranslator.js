@@ -1,11 +1,12 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 export default function Codetranslator(){
      return(
      <div>
   <nav className="navbar navbar-expand-lg  navbar-dark bg-primary">
     <div className="container-fluid">
-      <a className="navbar-brand" href="#">Metho Code</a>
+      <Link className="navbar-brand" to="/mainmenu">Metho Code</Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon" />
       </button>
@@ -17,10 +18,10 @@ export default function Codetranslator(){
               <button className="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div> <li className="nav-item active">
-            <a className="nav-link" href="#">Help <span className="sr-only">(current)</span></a>
+            <Link className="nav-link" href="#">Help <span className="sr-only">(current)</span></Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="{/Login}"><i className="fas fa-user" /> User</a>
+            <Link className="nav-link" href="{/Login}"><i className="fas fa-user" /> User</Link>
           </li>
         </ul>
       </div>
@@ -29,22 +30,22 @@ export default function Codetranslator(){
     <h2 className="frm">From</h2>
     <h2 className="to">To</h2> 
     <div>
-      <button type="button" className="but2">React</button>
-      <button type="button" className="but2">React</button>
+      <button type="button" className="but2">Python</button>
+      <button type="button" className="but2">C++</button>
     </div>
     <div className="dropdown1">
       <button className="dropbtn">Sample Programs</button>
       <div className="dropdown1-content">
-        <a href="#">C++</a>
-        <a href="#">JavaScript</a>
-        <a href="#">React</a>
+        <Link href="#">C++</Link>
+        <Link href="#">Java</Link>
+        <Link href="#">Python</Link>
       </div>
     </div> 
     <hr />
     <br />
     <div>
       <div>
-        <h2 className="label1">React</h2>
+        <h2 className="label1">Python</h2>
         <p className="colum1">
         </p>
       </div> 
@@ -58,9 +59,9 @@ export default function Codetranslator(){
     </div>
     <nav className=" navbar navbar-dark bg-primary fixed-bottom">
       <span />
-      <a className="text-light" href="#">
+      <Link className="text-light" to="/Login">
         <i className="fas fa-user" />
-      </a>
+      </Link>
     </nav>
   </div></div>
 

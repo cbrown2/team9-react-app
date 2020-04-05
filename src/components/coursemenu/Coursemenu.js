@@ -1,9 +1,9 @@
 import React from 'react'
-
+import {Link} from "react-router-dom";
 export default function Coursemenu(){
      return(
       <nav className="navbar navbar-expand-lg navbar navbar-dark bg-primary">
-  <a className="navbar-brand" href="#">Metho Code</a>
+  <Link className="navbar-brand" to="/mainmenu">Metho Code</Link>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon" />
   </button>
@@ -15,10 +15,10 @@ export default function Coursemenu(){
           <button className="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div> <li className="nav-item active">
-        <a className="nav-link" href="#">Help <span className="sr-only">(current)</span></a>
+        <Link className="nav-link" href="#">Help <span className="sr-only">(current)</span></Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#"><i className="fas fa-user" /> User</a>
+        <Link className="nav-link"to="/login"><i className="fas fa-user" /> User</Link>
       </li>
     </ul>
   </div>

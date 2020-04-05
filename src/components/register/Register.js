@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom";
 export default function Register(){
      return(
     
@@ -16,8 +16,8 @@ export default function Register(){
       <div className="form-group">
         <input type="password" className="form-control" placeholder="Verify Password" />
       </div>
-      <a href="profile.html" className="btn btn-primary btn-block">Register</a>
-      <a href="login.html" className="btn btn-danger btn-block">Cancel</a>
+      <Link to= "/mainmenu" className="btn btn-primary btn-block">Register</Link>
+      <Link to= "/login" className="btn btn-danger btn-block">Cancel</Link>
     </form>
   </div>
 </div>
